@@ -28,13 +28,16 @@ Execution:
 "py manage.py runserver"
 
 Changes Affected:
-•	Created Account.html in template folder,
-•	Created Account.css in Static/CSS folder,
-•	Set URL path path("Flight/account", Views.account_view, name="account"), in url.py page
-•	Added function name account_view in Views.py 
+Created Account.html in template folder,
+Created Account.css in Static/CSS folder,
+Set URL path path("Flight/account", Views.account_view, name="account"), in url.py page
+
+Added function name account_view in Views.py 
 def account_view(request):
     if request.user.is_authenticated:
         return render(request, 'flight/account.html',{'page': 'account'})
-•	Added Active functionality for My Account in layout.html
+        
+Added Active functionality for My Account in layout.html
 <li class="nav-item dropdown my-account {% if page == 'account' %}active{% endif %}">
+
 
