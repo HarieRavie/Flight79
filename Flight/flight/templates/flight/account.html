@@ -1,0 +1,41 @@
+{% extends 'flight/layout.html' %}
+
+{% load static %}
+
+{% block head %}
+<title>Account | Flight</title>
+<!--    <script type="text/javascript" src="{% static 'js/bookings.js' %}"></script>-->
+<link rel="stylesheet" href="{% static 'css/account.css' %}">
+{% endblock head %}
+
+{% block body %}
+<section class="section section1">
+    <div class="container">
+        <div class="row account-div">
+            <div class="col-6" style="display: flex;">
+                <div class="account_details">
+                    <h5> Account Details </h5>
+
+                    <div class="text-capitalize d-flex; justify-content-center"
+                         style="color: #666666; margin-top: auto;">
+                        <div>
+                            <span class="account_name" style="font-size: 1em;">Name:</span>
+                            <span class="" style="font-size: 1em;">{{user.first_name}} {{user.last_name}}</span>
+                        </div>
+                        <div>
+                            <span class="account_name" style="font-size: 1em;">UserName:</span>
+                            <span style="font-size: 1em;">{{user.username}}</span>
+                        </div>
+                        <div>
+                            <span class="account_name" style="font-size: 1em;">Email:</span>
+                            <span class="text-lowercase" style="font-size: 1em;">{{user.email}}</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
