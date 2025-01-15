@@ -5,7 +5,8 @@
 
 Install Python version more than 3.9+
 
-# Create virtual environment and activate py -m venv "env name" and "env name"\Scripts\activate
+# Create virtual environment and activate 
+py -m venv "env name" and "env name"\Scripts\activate
 
 # Run Required Modules using
 " py -m pip install -r requirements.txt "
@@ -17,12 +18,14 @@ xhtml2pdf
 tqdm
 gunicorn
 
-# Check Django Installation: "django-admin"
+# Check Django Installation:
+"django-admin"
 
 # Go to required file path of django and connect to database using
 "py manage.py makemigrations" "py manage.py migrate"
 
-# Execution: "py manage.py runserver"
+# run Django server: 
+"py manage.py runserver"
 
 # Changes Affected:
 * Created Account.html in template folder
